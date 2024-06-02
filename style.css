@@ -180,6 +180,9 @@ html{
         background-color:  #fdeaff;
         border: 0px;
         border-radius: 2px;
+        font-family: "DM Serif Display", serif;
+    font-weight:600;
+    font-style: italic;
        
       }
       form{
