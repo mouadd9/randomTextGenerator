@@ -31,30 +31,34 @@
 html{
     height: 100%;
     background-color: rgb(18, 24, 42);
-    color: white;
+    color: #fdeaff;
     font-family: 'Helvetica', sans-serif;
   }
   
   body {
     margin: 0;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
   }
 
   main {
-    width: 50%;
+    width: 40%;
     height: 100%;
-    padding: 0px 30px;
+    padding-left:30px;
+    padding-right:0px;
+
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap:20px;
-    border-right: 4px solid   rgb(255, 255, 255) ;
+    border-right: 4px solid   #fdeaff;
   }
 
   form{
-    width:275px;
+    width:70%;
     display: flex;
     flex-direction: column;
     
@@ -77,22 +81,126 @@ html{
     font-weight: 550;
    color: rgb(18, 24, 42);;
     font-style: normal;
-    background-color:  rgb(255, 255, 255) ;
+    background-color:#fdeaff;
     border: 0px;
     border-radius: 2px;
    
   }
   .color {
-    color: rgb(202, 215, 255);
+    color:  #f187fd;
   }
   button{
     padding: 0px 8px;
    
-   color: rgb(18, 24, 42);;
+   color: rgb(18, 24, 42);
     font-style: normal;
-    background-color:  rgb(202, 215, 255);
+    background-color:  #f187fd;
     border: 0px;
     border-radius: 2px;
     padding-bottom: 6px;
   }
 
+  .text {
+    width:60% ;
+    padding: 0px 30px;
+    margin-top: 30px;
+    font-size: 2.7rem;
+  }
+
+.error {
+   width: 50%;
+   text-align: center;
+   border: 1px solid  rgb(255, 133, 133);
+   color: rgb(18, 24, 42);;
+   padding: 4px 0px;
+   background-color: rgb(255, 133, 133); 
+   border-radius: 2px;
+   display: none;
+   font-weight: 550;
+   transition: transform 0.3s ease-in-out;
+   font-style: normal;
+   font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+        padding: 15px 0px;
+        padding-bottom:17px;
+      
+        
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:20px;
+        border-right: none ;
+        
+      }
+      .text {
+        width:98% ;
+        
+        margin-top: 0px;
+        font-size: 2.1rem;
+        padding-left: 0px;
+       
+        
+    
+        border-top:0px solid #f187fd;;
+      }
+      h1, span{
+        font-size: 2.1rem;
+      }
+    
+    button{
+      padding: 0px 5px;
+     
+     color: rgb(18, 24, 42);
+      font-style: normal;
+      background-color:   #f187fd;
+      border: 0px;
+      border-radius: 2px;
+      padding-bottom: 6px;
+    }
+    input { 
+        padding: 5px 4px;
+        font-size: 1.2rem;
+        font-weight: 550;
+       color: rgb(18, 24, 42);;
+        font-style: normal;
+        background-color:  #fdeaff;
+        border: 0px;
+        border-radius: 2px;
+       
+      }
+      form{
+        padding-left: 11px;
+        width:97%;
+        display: flex;
+        flex-direction: column;
+        
+        gap:12px;
+        border-left: 4px solid #f187fd;
+        
+    
+    
+      }
+      
+  .test {
+    font-family: "DM Serif Display", serif;
+    font-weight:600;
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+
+
+}

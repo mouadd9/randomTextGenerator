@@ -10,18 +10,23 @@
         
     </head>
     <body>
+
         <main>
-            <h1>Hello,<br> enter your<br>name for a <br><span class="color dm-serif-display-pseudo">surprise ...</span></h1>
+            <h1>Hello,<br> enter your<br>name for a <span class="color dm-serif-display-pseudo">surprise ...</span></h1>
             <form id="myForm">
                 <input id="name" type="text" name="name" placeholder="name" >
-                <input id="surename" type="text" name="surname" placeholder="surename">
-                <button id="button" class="test" type="submit">press</button>
+                <input id="surname" type="text" name="surname" placeholder="surname">
+                <button id="button" class="test" type="button">press</button>
+                <div id="error" class="error">Missing input</div>
             </form>
         </main>
+       
         <div class="text">
-
+                    <h1 id = "text"></h1>      
         </div>
 
-        <script type="module" src="./modules/main.js" ></script>
-    </body>
+     
+      
+    </body>  
+     <script type="module" src="./modules/main.js" ></script>
 </html>

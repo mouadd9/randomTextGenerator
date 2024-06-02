@@ -1,12 +1,14 @@
-import {collectFormData } from "./main.js";
 
 class user {
     constructor(name, surname){
         this._name = name;
         this._surname = surname;
     }
+    
+    static create(formData){
+        
+        return new user(formData.name, formData.surname);
+    }
 }
- 
-const newUser = new user(collectFormData().name, collectFormData().surname);
 
-export {newUser};
+export {user};

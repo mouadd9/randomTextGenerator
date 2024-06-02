@@ -1,19 +1,26 @@
- 
+
+import {returnString} from "./stringsDataModule.js"
+
 let form = document.getElementById('myForm');
 let button = document.getElementById('button');
-
-
-
-const collectFormData = () => {
-    const formData = {
+let formData = {};
+let test = 0;
+button.addEventListener('click', ()=>{
+ formData = {
         name: form.elements['name'].value,
         surname: form.elements['surname'].value
     }
-    return formData;
-}
-button.addEventListener('click', collectFormData);
+    if (formData.name && formData.surname) {
+        document.getElementById('error').style.display = 'none';
+        returnString(formData);
+    }
+    else{
+        document.getElementById('error').style.display = 'block';
+        
+    }
+ 
+});
 
-export {collectFormData}
-
+   
 
 
