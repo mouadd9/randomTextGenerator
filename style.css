@@ -54,7 +54,7 @@ html{
   }
 
   form{
-    width:50%;
+    width:275px;
     display: flex;
     flex-direction: column;
     
@@ -96,6 +96,3 @@ html{
     padding-bottom: 6px;
   }
 
-  div{
-    
-  }

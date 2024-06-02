@@ -1,11 +1,9 @@
-
-
-
 class user {
-    constructor(name, surname, cat){
+    constructor(name, surname){
         this._name = name;
         this._surname = surname;
-        this._cat = cat;
     }
     
 }
+export {user}
+
