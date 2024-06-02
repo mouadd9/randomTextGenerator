@@ -2,7 +2,7 @@
 let form = document.getElementById('myForm');
 let button = document.getElementById('button');
 
-button.addEventListener('click', collectFormData);
+
 
 const collectFormData = () => {
     const formData = {
@@ -11,6 +11,7 @@ const collectFormData = () => {
     }
     return formData;
 }
+button.addEventListener('click', collectFormData);
 
 export {collectFormData}
 
