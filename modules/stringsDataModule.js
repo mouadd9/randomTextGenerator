@@ -9,10 +9,7 @@ const returnString = (formData) => {
     let messages = [
         `${highlightedName}, we are happy to inform you that you won a cat !!`,
         `${highlightedName}, you are loved and cared for.`,
-        `Have a blessed day, ${highlightedName}.`,
-        `kill yourself, oh you're white, thought you were a nigger for a while<br> MY BAD !`,
-        `kihl houwa lah`,
-        `${highlightedName} is god's failure`
+        `Have a blessed day, ${highlightedName}.`
     ];
 
     let index;
