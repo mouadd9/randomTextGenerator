@@ -1,4 +1,4 @@
-
+//userClass
 class user {
     constructor(name, surname) {
         this._name = name;
