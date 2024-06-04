@@ -4,11 +4,15 @@ class user {
         this._name = name;
         this._surname = surname;
     }
-    
-    static create(formData){
-        
-        return new user(formData.name, formData.surname);
+
+    getName(){
+        return this._name;
     }
+
+    getSurname(){
+        return this._surname;
+    }
+
 }
 
 export {user};
