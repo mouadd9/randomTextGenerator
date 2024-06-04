@@ -171,6 +171,9 @@ html{
       border-radius: 2px;
       padding-bottom: 6px;
     }
+    button:active {
+      background-color:   #f9d5fd;
+    }
     input { 
         padding: 5px 4px;
         font-size: 1.2rem;
