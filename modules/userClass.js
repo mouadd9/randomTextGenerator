@@ -1,18 +1,18 @@
 
 class user {
-    constructor(name, surname){
+    constructor(name, surname) {
         this._name = name;
         this._surname = surname;
     }
 
-    getName(){
+    getName() {
         return this._name;
     }
 
-    getSurname(){
+    getSurname() {
         return this._surname;
     }
 
 }
 
-export {user};
+export { user };

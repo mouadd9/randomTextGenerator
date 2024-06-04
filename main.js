@@ -1,5 +1,5 @@
 
-import {returnString} from "./stringsDataModule.js"
+import {returnString} from "./modules/messageController.js"
 
 let form = document.getElementById('myForm');
 let button = document.getElementById('button');
